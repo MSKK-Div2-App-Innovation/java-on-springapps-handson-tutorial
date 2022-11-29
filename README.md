@@ -32,7 +32,7 @@
 
 - **アーキテクチャ図**
 
-  ![Handson architecture](./images/common-architecture.png)
+
 
 <br>
 
