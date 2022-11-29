@@ -44,36 +44,14 @@
 
 - **演習 1**
 
-  1. [ローカル環境でのプロジェクトの実行](./steps/P1-01.md)
-  1. [Dockerfile の追加](./steps/P1-02.md)
-  1. Docker イメージの作成と  Azure Container Registry への Push (**以下どちらか選択する**)
-      1. [Azure Container Registry に直接 Docker イメージを作成する演習](./steps/P1-03-a.md)
-      1. [ローカル環境で Docker イメージを生成する演習](./steps/P1-03-b.md)
-  1. [Azure Container Apps の作成とコンテナーアプリのデプロイ](./steps/P1-04.md)
+ 
 >
 - **演習 2**
-  
-  - [準備: Azure リソースを作成](./steps/P2-00.md)
 
-  1. **API アプリ**  
-     演習 1 で作成した **API アプリのリポジトリ**に対して、以下の演習を実施し、GitHub Actions を使用したアプリケーションのデプロイワークフローを作成 
 
-     1. [GitHub アクション雛形を作成](./steps/P2-01.md)
-     1. [Azure Container Registry の接続情報を追加](./steps/P2-02.md)
-     1. [Azure Container Registry にコンテナーイメージ作成処理を追加](./steps/P2-03.md)
-     1. [Deploy ジョブを追加](./steps/P2-04.md)
-     1. [Azure 接続処理を追加](./steps/P2-05.md)
-     1. [Azure Container Apps にアプリをデプロイする処理を追加](./steps/P2-06-a.md)
-     1. [CI/CD を体験](./steps/P2-07-a.md)<br><br>
+- **演習 3 (Option) **
 
-  1. **UI アプリ**  
-     演習 1 で作成した **UI アプリのリポジトリ**に対して、以下の演習を実施し、GitHub Actions を使用したアプリケーションのデプロイワークフローを作成 
-
-     1. 上記 **API アプリ**の a〜e の手順を同様に実施
-     1. [Azure Container Apps にアプリをデプロイする処理を追加](./steps/P2-06-b.md)
-     1. [CI/CD を体験](./steps/P2-07-b.md)<br><br>     
-
-- **(Option) リソースのクリンアップ**
+ - **リソースのクリンアップ (Option) **
 このハンズオンで作成した Azure リソースのプロビジョニングを解除する場合は以下の手順を実施
 
   1. すべての Azure ソース グループを削除

@@ -44,8 +44,7 @@
       - [**Azure Resources**](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups)
       - [**Azure Spring Apps**](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-azurespringcloud)
       - [**Visual Studio Docker 拡張**](https://code.visualstudio.com/docs/containers/overview)
-
-<br><br>
+      - [**Visual Studio MySQL 拡張**](https://marketplace.visualstudio.com/items?itemName=formulahendry.vscode-mysql)
 
 ## 3. 演習で使用するプロジェクトの入手
 このハンズオンでは、ペット クリニックを模したサービスを使用します。同サービスはマイクロサービス アーキテクチャ パターンで開発されています。
