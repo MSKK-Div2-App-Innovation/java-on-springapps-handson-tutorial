@@ -11,7 +11,7 @@
 
    - [**GitHub**](https://github.com/join)
 
-
+<br>
 
 ## 2. ローカル開発環境
 この演習で使用する開発環境に必要となるツールとランタイム類は以下のとおりです。
@@ -43,8 +43,8 @@
 
       - [**Azure Resources**](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups)
       - [**Azure Spring Apps**](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-azurespringcloud)
-      - [**Visual Studio Docker 拡張**](https://code.visualstudio.com/docs/containers/overview)
-      - [**Visual Studio MySQL 拡張**](https://marketplace.visualstudio.com/items?itemName=formulahendry.vscode-mysql)
+
+<br>
 
 ## 3. 演習で使用するプロジェクトの入手
 このハンズオンでは、ペット クリニックを模したサービスを使用します。同サービスはマイクロサービス アーキテクチャ パターンで開発されています。
@@ -66,8 +66,9 @@
 
 [**springapps-petclinic-microservices-config**]( https://github.com/joyoji/springapps-petclinic-microservices-config ) 全て分散アプリケーションのプロパティを管理するためのリポジトリ
 
+<br>
 
-### リポジトリのコピー
+### 3.1 リポジトリのコピー
 
 - **サービス本体部分**
     1. 以下の URL にアクセスし、画面内の右上のボタン `[Fork]` をクリックします  
@@ -89,11 +90,32 @@
  
 -  **UI アプリ**
    - 同様の作業を以下のリポジトリに対しても行います
-   https://github.com/horihiro/containerapps-albumui
+   https://github.com/joyoji/springapps-petclinic-microservices-config
 
-   >>>>>>>>>>>> ダウンロードせず、設定箇所を変更
+   ご自身の GitHub アカウントに `springapps-petclinic-microservices-config` リポジトリが作成されたことを確認します、URL をメモにします。
 
-<br><br>
+<br>
+
+### 3.2 設定ファイル変更
+1. springapps-petclinic-microservices 直下の application.yml ファイルを開きします、編集ボタンをクリックします。  
+
+   <img src="../images/common-03-01.png" width="700">
+
+2. uri の値を上記記録した springapps-petclinic-microservices-config のリンクを書き換えます。
+
+    uri: https://github.com/{各自の Github アカウント名 }}/springapps-petclinic-microservices-config
+
+3. 修正を保存するために、 Commiti changes ボタンを押下します。
+
+   <img src="../images/common-03-02.png" width="700">
+
+<br> 
+
+   - 同様の作業を以下のファイルに対しても行います。
+
+   springapps-petclinic-microservices/spring-petclinic-config-server/src/main/resources/bootstrap.yml
+
+<br><br>   
 
 ## 4. ローカル環境へのリポジトリのクローン
 
@@ -111,13 +133,16 @@
 
    ```git clone %前の手順でコピーしたリポジトリの URL% ```
 
-4. コマンドの実行が終了したら ls コマンドで springapps-petclinic-microservices フォルダが作成されていることを確認し、cd コマンドで作業ディレクトリを springapps-petclinic-microservices に切り替えます。cd コマンドの具体的な書式は以下です
+4. コマンドの実行が終了したら ls コマンドで springapps-petclinic-microservices フォルダが作成されていることを確認し、
+
+   cd コマンドで作業ディレクトリを springapps-petclinic-microservices に切り替えます。cd コマンドの具体的な書式は以下です
 
    ```cd springapps-petclinic-microservices```
 
-   プロジェクト springapps-petclinic-microservices-config に対しても同様の処理を行います。　
+   プロジェクト springapps-petclinic-microservices-config に対して、ローカルへダウンロードしなくてもよいため、スキップします。
+   　
 <br><br>
 
-次のタスク : [**演習1) タスク１ - ローカル環境でのプロジェクトの実行**](P1-01.md)へ
+次のタスク : [**演習 1) タスク１ - ローカル環境でのプロジェクトの実行**](P1-01.md)へ
 
 戻る : [**Readme**](README.md)へ
