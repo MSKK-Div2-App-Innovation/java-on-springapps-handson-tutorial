@@ -54,8 +54,6 @@
 - **アーキテクチャ図**
 
     <img src="images/Readme-1.png" width="900">
-
-
 <br>
 
 ## 事前準備
