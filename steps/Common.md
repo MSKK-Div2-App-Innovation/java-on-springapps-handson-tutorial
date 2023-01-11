@@ -111,7 +111,7 @@
 
 <br> 
 
-   - 同様の作業を以下のファイルに対しても行います。
+   - 同様の作業は以下のファイルに対しても行います。
 
    springapps-petclinic-microservices/spring-petclinic-config-server/src/main/resources/bootstrap.yml
 
@@ -139,7 +139,7 @@
 
    ```cd springapps-petclinic-microservices```
 
-   プロジェクト springapps-petclinic-microservices-config に対して、ローカルへダウンロードしなくてもよいため、スキップします。
+   プロジェクト springapps-petclinic-microservices-config は、Github のリポジトリに直接に接続するため、ローカルへのダウンロードをスキップします。
    　
 <br><br>
 
