@@ -97,7 +97,7 @@
 <br>
 
 ### 3.2 設定ファイル変更
-1. springapps-petclinic-microservices 直下の application.yml ファイルを開きします、編集ボタンをクリックします。  
+1. springapps-petclinic-microservices 直下の `application.yml` ファイルを開きします、`編集`ボタンをクリックします。  
 
    <img src="../images/common-03-01.png" width="700">
 
@@ -105,7 +105,7 @@
 
     uri: https://github.com/{各自の Github アカウント名 }}/springapps-petclinic-microservices-config
 
-3. 修正を保存するために、 Commiti changes ボタンを押下します。
+3. 修正を保存するために、 `Commiti changes` ボタンを押下します。
 
    <img src="../images/common-03-02.png" width="700">
 
@@ -113,23 +113,20 @@
 
    - 同様の作業は以下のファイルに対しても行います。
 
-   springapps-petclinic-microservices/spring-petclinic-config-server/src/main/resources/bootstrap.yml
+      springapps-petclinic-microservices/spring-petclinic-config-server/src/main/resources/bootstrap.yml
 
-<br><br>   
+<br>  
 
 ## 4. ローカル環境へのリポジトリのクローン
-
 開発環境で作業を行うために、ご自身の GitHub アカウントに作成した演習用アプリケーション springapps-petclinic-microservices をローカルにクローンします。
 
-手順は以下のとおりです。
+1. Web ブラウザーでご自身の GitHub アカウントに作成した springapps-petclinic-microservices のリポジトリにアクセスします。
 
-1. Web ブラウザーでご自身の GitHub アカウントに作成した springapps-petclinic-microservices のリポジトリにアクセスします
-
-2. \[Code\] ボタンをクリックします。\[HTTPS\] タブをアクティブにし、表示されている URL をコピーボタンをクリックしてクリップボードにコピーします
+2. `Code` ボタンをクリックします。`HTTPS` タブをアクティブにし、表示されている URL を`コピー`ボタンをクリックしてクリップボードにコピーします。
 
    <img src="../images/common-04-02.png" width="700">
 
-3. ローカルの任意のフォルダ(ディレクトリ) にターミナル(コマンド プロンプト)からアクセスし、以下のコマンドを実行します
+3. ローカルの任意のフォルダ(ディレクトリ) にターミナル(コマンド プロンプト)からアクセスし、以下のコマンドを実行します。
 
    ```git clone %前の手順でコピーしたリポジトリの URL% ```
 
