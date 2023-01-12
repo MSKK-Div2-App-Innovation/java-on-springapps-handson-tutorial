@@ -20,7 +20,7 @@
 
 - **演習 2 GitHub Actions を使用したアプリケーションのデプロイ**
 
-	1. GitHub アクション雛形を作成
+	1. GitHub Actions 雛形を作成
 	1. アプリのコンパイルジョブ追加
 	1. Azure 接続処理を追加
 	1. アプリをデプロイする処理を追加
@@ -73,7 +73,7 @@
     <br>
 
 - **演習 2**
-	1. [GitHub アクション雛形を作成](./steps/P2-01.md)
+	1. [GitHub Actions 雛形を作成](./steps/P2-01.md)
 	1. [Deploy ジョブを追加](./steps/P2-02.md)
 	1. [Azure 接続処理を追加](./steps/P2-03.md)
 	1. [Azure Spring Apps にアプリをデプロイする処理を追加](./steps/P2-04.md)

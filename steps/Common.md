@@ -23,12 +23,12 @@
       Ver11.0.17 へ移動、各自 OS に対応するものをダウンロード、https://learn.microsoft.com/ja-jp/java/openjdk/install よりインストール
 
    - [**Maven**](https://maven.apache.org/install.html)
-   - [**Git**](https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
+   - [**Git**](https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB) : Git 以外 Git Bash (Windows向けのBashエミュレータ) も含まれています。
    - [**Azure CLI**](https://docs.microsoft.com/ja-jp/cli/azure/install-azure-cli)
 
       なお Azure CLI のバージョンが古いと動作しないコマンドもありますので、既にインストールされている場合は、以下のドキュメントを参考に更新を行ってください。
 
-      -[**Azure CLI 更新する方法**](https://docs.microsoft.com/ja-jp/cli/azure/update-azure-cli)
+      - [**Azure CLI 更新する方法**](https://docs.microsoft.com/ja-jp/cli/azure/update-azure-cli)
 
       何らかの事情でローカル環境で Azure CLI が使用できない場合は、Azure ポータルから Azure Cloud Shell を使用することができます。
 
@@ -36,7 +36,7 @@
 
       - [**Azure Cloud Shell の概要**](https://docs.microsoft.com/ja-jp/azure/cloud-shell/overview)
 
-   - [**Docker デスクトップ**](https://docs.docker.com/get-docker/) (※) 演習でローカルでのコンテナ アプリの実行を確認する手順を選択しない場合は必要ありません
+   - [**Docker デスクトップ**](https://docs.docker.com/get-docker/) (※) 演習でローカルでのコンテナ アプリ実行用
    - [**Visual Studio Code**](https://code.visualstudio.com/Download)
 
       Visual Studio Code 拡張
@@ -49,20 +49,19 @@
 ## 3. 演習で使用するプロジェクトの入手
 このハンズオンでは、ペット クリニックを模したサービスを使用します。同サービスはマイクロサービス アーキテクチャ パターンで開発されています。
 
-サービスは 4 つのコア Spring アプリに分解されます。個別にもデプロイことが可能です。
+サービスは 5 つのコア Spring アプリに分解されます。個別にもデプロイことが可能です。
 
     - 顧客サービス: 一般的なユーザー入力ロジックと検証が含まれています。ペットと飼い主の情報 (名前、住所、市区町村、電話番号) が含まれます。
     - 訪問サービス: 各ペットのコメントの訪問情報を保存および表示します。
     - 獣医サービス: 名前や専門分野など、獣医の情報を保存および表示します。
     - API ゲートウェイ: システムへの単一のエントリ ポイントです。要求を処理し、適切なサービスにルーティングしたり、複数のサービスを呼び出し、結果を集計したりするために使用されます。
+    - Admin: Spring アプリケーションを監視します。
     
 3 つのコア サービスは、外部 API をクライアントに公開します。
-実際のシステムでは、システムの複雑さによって関数の数が急速に増加する可能性があります。 
-1 つの複雑な Web ページのレンダリングには、数百のサービスが関係していることがあります。
 
 ソースコードは以下となります。
 
-[**springapps-petclinic-microservices**]( https://github.com/joyoji/springapps-petclinic-microservices ) サービス本体部分のリポジトリ
+[**springapps-petclinic-microservices**]( https://github.com/joyoji/springapps-petclinic-microservices ) 本体部分のリポジトリ
 
 [**springapps-petclinic-microservices-config**]( https://github.com/joyoji/springapps-petclinic-microservices-config ) 全て分散アプリケーションのプロパティを管理するためのリポジトリ
 
@@ -88,7 +87,7 @@
     
     3. 同ページの `[Create fork]` ボタンをクリックしてご自身の GitHub アカウントに `springapps-petclinic-microservices` リポジトリが作成されたことを確認します
  
--  **UI アプリ**
+-  **プロパティを管理するためのリポジトリ**
    - 同様の作業を以下のリポジトリに対しても行います
    https://github.com/joyoji/springapps-petclinic-microservices-config
 
@@ -101,7 +100,7 @@
 
    <img src="../images/common-03-01.png" width="700">
 
-2. uri の値を上記記録した springapps-petclinic-microservices-config のリンクを書き換えます。
+2. uri の値を上記記録した springapps-petclinic-microservices-config のリポジトリリンクに書き換えます。
 
     uri: https://github.com/{各自の Github アカウント名 }}/springapps-petclinic-microservices-config
 
@@ -136,7 +135,7 @@
 
    ```cd springapps-petclinic-microservices```
 
-   プロジェクト springapps-petclinic-microservices-config は、Github のリポジトリに直接に接続するため、ローカルへのダウンロードをスキップします。
+   プロジェクト springapps-petclinic-microservices-config は、Github のリポジトリに直接に接続するため、ローカルへのダウンロードは不要となります。
    　
 <br><br>
 
