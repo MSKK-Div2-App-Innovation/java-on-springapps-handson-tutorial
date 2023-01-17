@@ -51,11 +51,11 @@
 
 サービスは 5 つのコア Spring アプリに分解されます。個別にもデプロイことが可能です。
 
-    - 顧客サービス: 一般的なユーザー入力ロジックと検証が含まれています。ペットと飼い主の情報 (名前、住所、市区町村、電話番号) が含まれます。
-    - 訪問サービス: 各ペットのコメントの訪問情報を保存および表示します。
-    - 獣医サービス: 名前や専門分野など、獣医の情報を保存および表示します。
-    - API ゲートウェイ: システムへの単一のエントリ ポイントです。要求を処理し、適切なサービスにルーティングしたり、複数のサービスを呼び出し、結果を集計したりするために使用されます。
-    - Admin: Spring アプリケーションを監視します。
+   - 顧客サービス: 一般的なユーザー入力ロジックと検証が含まれています。ペットと飼い主の情報 (名前、住所、市区町村、電話番号) が含まれます。
+   - 訪問サービス: 各ペットのコメントの訪問情報を保存および表示します。
+   - 獣医サービス: 名前や専門分野など、獣医の情報を保存および表示します。
+   - API ゲートウェイ: システムへの単一のエントリ ポイントです。要求を処理し、適切なサービスにルーティングしたり、複数のサービスを呼び出し、結果を集計したりするために使用されます。
+   - Admin: Spring アプリケーションを監視します。
     
 3 つのコア サービスは、外部 API をクライアントに公開します。
 
@@ -74,7 +74,7 @@
       https://github.com/joyoji/springapps-petclinic-microservices  
       <br>
     
-    2. `Create a new fork` 画面の各項目を以下のように設定します
+    2. `[+ Create a new fork]` を選択し、画面の各項目を以下のように設定します
       
          |  項目  |  値  |
          | ---- | ---- |   
@@ -91,7 +91,7 @@
    - 同様の作業を以下のリポジトリに対しても行います
    https://github.com/joyoji/springapps-petclinic-microservices-config
 
-   ご自身の GitHub アカウントに `springapps-petclinic-microservices-config` リポジトリが作成されたことを確認します、URL をメモにします。
+   ご自身の GitHub アカウントに `springapps-petclinic-microservices-config` リポジトリが作成されたことを確認します、URL をメモしておきます。
 
 <br>
 
@@ -100,11 +100,11 @@
 
    <img src="../images/common-03-01.png" width="700">
 
-2. uri の値を上記記録した springapps-petclinic-microservices-config のリポジトリリンクに書き換えます。
+2. uri の値を上記で記録した springapps-petclinic-microservices-config のリポジトリリンクに書き換えます。
 
     uri: https://github.com/{各自の Github アカウント名 }}/springapps-petclinic-microservices-config
 
-3. 修正を保存するために、 `Commiti changes` ボタンを押下します。
+3. 修正を保存するために、 `[Commiti changes]` ボタンを押下します。
 
    <img src="../images/common-03-02.png" width="700">
 
@@ -121,21 +121,21 @@
 
 1. Web ブラウザーでご自身の GitHub アカウントに作成した springapps-petclinic-microservices のリポジトリにアクセスします。
 
-2. `Code` ボタンをクリックします。`HTTPS` タブをアクティブにし、表示されている URL を`コピー`ボタンをクリックしてクリップボードにコピーします。
+2. `[Code]` ボタンをクリックします。`HTTPS` タブをアクティブにし、表示されている URL を`コピー`ボタンをクリックしてクリップボードにコピーします。
 
    <img src="../images/common-04-02.png" width="700">
 
 3. ローカルの任意のフォルダ(ディレクトリ) にターミナル(コマンド プロンプト)からアクセスし、以下のコマンドを実行します。
 
-   ```git clone %前の手順でコピーしたリポジトリの URL% ```
+   ```git clone {前の手順でコピーしたリポジトリの URL} ```
 
 4. コマンドの実行が終了したら ls コマンドで springapps-petclinic-microservices フォルダが作成されていることを確認し、
 
-   cd コマンドで作業ディレクトリを springapps-petclinic-microservices に切り替えます。cd コマンドの具体的な書式は以下です
+   cd コマンドで作業ディレクトリを springapps-petclinic-microservices に切り替えます。cd コマンドの具体的な書式は以下です。
 
    ```cd springapps-petclinic-microservices```
 
-   プロジェクト springapps-petclinic-microservices-config は、Github のリポジトリに直接に接続するため、ローカルへのダウンロードは不要となります。
+   プロジェクト springapps-petclinic-microservices-config は、Github のリポジトリに直接に接続するため、ローカルへのダウンロードは不要です。
    　
 <br><br>
 
