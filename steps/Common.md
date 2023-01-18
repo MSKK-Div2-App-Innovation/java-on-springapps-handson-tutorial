@@ -22,8 +22,34 @@
 
       Ver11.0.17 へ移動、各自 OS に対応するものをダウンロード、https://learn.microsoft.com/ja-jp/java/openjdk/install よりインストール
 
-   - [**Maven**](https://maven.apache.org/install.html)
-   - [**Git**](https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB) : Git 以外 Git Bash (Windows向けのBashエミュレータ) も含まれています。
+   - [**Maven**](https://maven.apache.org/download.cgi)
+
+      Windows の場合 
+
+      1. apache-maven-3.8.7-bin.zip をダウンロードし、解凍してローカルに配置　 
+
+      2. Windows の[システムの環境変数] で JAVA_HOME に JAVA SDK のインストールパスを指定 (ex : C:\Program Files\Java\jdk-11.0.14) 
+
+      3. Windows の[システムの環境変数] の path に Maven の以下のパスを設定 
+
+         　配置したディレクトリ\apache-maven-3.8.7\bin 
+
+      MacOS の場合、[**Maven – Installing Apache Maven**](https://maven.apache.org/install.html) をご参考にしてください。 
+
+   - [**Git**](https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB) : 作業用のコードをダウンロード、コードを管理するための git クライアントとなります。 
+
+      Windows の場合、[**Git for windows**](https://git-scm.com/download/win) よりインストールします。 
+
+      MacOS の場合、[**Git for MacOS**](https://git-scm.com/download/mac) よりインストールします。  
+
+   - Git Bash 
+
+      Windows 向けの Bash エミュレータ。上記の Git for windows に含まれます。  
+
+      MacOS の場合、標準で付属しているターミナルを使用します。 
+
+      ※ 今回のハンズオンには、Git Bash、ターミナル または Windows に標準搭載されている PowerShell を使用してコマンドを実行します。 
+
    - [**Azure CLI**](https://docs.microsoft.com/ja-jp/cli/azure/install-azure-cli)
 
       なお Azure CLI のバージョンが古いと動作しないコマンドもありますので、既にインストールされている場合は、以下のドキュメントを参考に更新を行ってください。
