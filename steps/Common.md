@@ -98,7 +98,7 @@
 ### 3.1 リポジトリのコピー
 
 - **サービス本体部分**
-    1. 以下の URL にアクセスし、画面内の右上のボタン `[Fork]` をクリックします  
+    1. 以下の URL にアクセスし、画面内の右上のボタン `[Fork]` をクリックします。
       https://github.com/joyoji/springapps-petclinic-microservices  
       <br>
     
@@ -113,10 +113,10 @@
 
    <br>
     
-    3. 同ページの `[Create fork]` ボタンをクリックしてご自身の GitHub アカウントに `springapps-petclinic-microservices` リポジトリが作成されたことを確認します
+    3. 同ページの `[Create fork]` ボタンをクリックしてご自身の GitHub アカウントに `springapps-petclinic-microservices` リポジトリが作成されたことを確認します。
  
 -  **プロパティを管理するためのリポジトリ**
-   - 同様の作業を以下のリポジトリに対しても行います
+   - 同様の作業を以下のリポジトリに対しても行います。
    https://github.com/joyoji/springapps-petclinic-microservices-config
 
    ご自身の GitHub アカウントに `springapps-petclinic-microservices-config` リポジトリが作成されたことを確認します、URL をメモしておきます。
@@ -132,15 +132,17 @@
 
     uri: https://github.com/{各自の Github アカウント名 }}/springapps-petclinic-microservices-config
 
-3. 修正を保存するために、 `[Commiti changes]` ボタンを押下します。
+3. 修正を保存するために、 `[Commit changes]` ボタンを押下します。
 
    <img src="../images/common-03-02.png" width="700">
 
 <br> 
 
-   - 同様の作業は以下のファイルに対しても行います。
+4. 同じリポジトリ内の以下のファイルに対しても同様の作業を行います。
 
-      springapps-petclinic-microservices/spring-petclinic-config-server/src/main/resources/bootstrap.yml
+   springapps-petclinic-microservices/spring-petclinic-config-server/src/main/resources/bootstrap.yml
+
+   <img src="../images/common-03-02-bootstrp-yml.png" width="700">
 
 <br>  
 
