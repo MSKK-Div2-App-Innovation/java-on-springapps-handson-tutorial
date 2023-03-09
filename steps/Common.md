@@ -65,6 +65,15 @@
       - [**Azure Cloud Shell の概要**](https://docs.microsoft.com/ja-jp/azure/cloud-shell/overview)
 
    - [**Docker デスクトップ**](https://docs.docker.com/get-docker/) (※) 演習でローカルでのコンテナ アプリ実行用
+
+      ロカール環境で Docker コンテナを実行する際、Maven Docker Plugin より接続エラーを回避するために、以下の設定を行います。
+
+      1. Docker Desktop を起動して、右上歯車のアイコン( Setting )画面を開きます。
+
+      2. デフォルトで表示されている General 画面に、`Expose daemon on tcp://localhost:2375 without TLS` にチェックをいれて、 `Apply & restart` ボタンをクリックして保存します。
+
+         <img src="../images/common-02-docker-desktop-setting.png" width="700">
+
    - [**Visual Studio Code**](https://code.visualstudio.com/Download)
 
       Visual Studio Code 拡張
